@@ -27,10 +27,11 @@ const Login = () => {
     // set cookie here
     // set loggedIn = true and max-age = 60*1000 (one minute)
     document.cookie = cookie.serialize("isLoggedIn", "true", {
-      "isLoggedIn=true; max-age=10";
+      maxAge: 10
     });
     navigate("/");
   };
+  "isLoggedIn=true; max-age=10";
 
   return (
     <div className="App">
